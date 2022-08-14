@@ -25,5 +25,5 @@
 - 데이터의 년도를 years에 입력.
 
 ## Reference
-[파이썬 - 예측모델(LSTM 모델 주가예측](https://post.naver.com/viewer/postView.nhn?volumeNo=29132930&memberNo=18071586)
+[파이썬 - 예측모델(LSTM 모델 주가예측](https://post.naver.com/viewer/postView.nhn?volumeNo=29132930&memberNo=18071586)  
 [LSTM을 활용한 주식가격 예측](https://dschloe.github.io/python/python_edu/07_deeplearning/deep_learning_lstm/)
