@@ -8,6 +8,11 @@ pandas = "*"
 pathlib = "*"
 openpyxl = "*"
 numpy = "*"
+matplotlib = "*"
+torch = "*"
+sklearn = "*"
+keras = "*"
+tensorflow = "*"
 
 [dev-packages]
 
