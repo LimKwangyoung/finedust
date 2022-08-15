@@ -28,10 +28,21 @@
 ### draw_graph
 - final.csv 파일을 PM10 값으로 plot을 그림.
 ### split
-- 2019-12-31을 기준으로 train과 test를 나눔.
-- train: 2324 days
-- test: 567 days
+- 2019-12-31을 기준으로 train set과 test set를 나눔.
+- train set: 2324 days
+- test set: 567 days
+### normalization
+- StandardScaler, MinMaxScaler, MaxAbsScaler, RobustScaler 중 선택 사용.
+### train_test_split_window
+- window_size에 따라 trian set과 test set을 구성.
+- X_train (SO2, CO, O3, NO2): 시작일을 2012-01-01부터 2012-02-04까지의 2294 days의 데이터. (2294, 30, 4)
+- y_train (PM10): 2012-02-05부터 2019-12-31까지의 2294 days의 데이터. (2294, 1)
+- X_test (SO2, CO, O3, NO2): 시작일을 2020-01-01부터 2020-02-05까지의 537 days의 데이터. (537, 30, 4)
+- y_test (PM10): 2020-02-06부터 2021-12-31까지의 537 days의 데이터. (537, 1)
+### main
+- model.py에서의 모델 사용.
 
 ## Reference
 [파이썬 - 예측모델(LSTM 모델 주가예측](https://post.naver.com/viewer/postView.nhn?volumeNo=29132930&memberNo=18071586)  
 [LSTM을 활용한 주식가격 예측](https://dschloe.github.io/python/python_edu/07_deeplearning/deep_learning_lstm/)
+[시계열 데이터를 RNN으로 분석할 때 데이터의 형태(차원)](https://sosoeasy.tistory.com/404)
