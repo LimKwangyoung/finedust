@@ -102,7 +102,7 @@ def dataloader(input_path: Path, output_path: Path, years:tuple = tuple(range(20
         final_df.to_csv(f"{opt_path}/final.csv")
 
     csv_data_path = Path('./csv_data')
-    # create_csv(input_path, csv_data_path, years)
+    create_csv(input_path, csv_data_path, years)
 
     new_csv_data_path = Path('./new_csv_data')
     merge_by_day(csv_data_path, new_csv_data_path, years)
